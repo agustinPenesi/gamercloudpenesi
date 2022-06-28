@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "bebas neue";
+    
+    
+    
+}
+.tituloPricipal{
+    text-align: center;
+    font-size: 40px;
+    margin: 27px;
+    
+    
+    
+    
+}
+
+
+.copyright h5{
+
+    font-size: 18px;
+    text-align: center;
+    color:#056CF2 ;
+    
+
+    
+}
+
+.colorFondo{
+    background-color: #6EE39C;
+
+}
+
+.navBar{
+
+    width: 100%;
+    height: 80px;
+    background-color: #056CF2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+    
+} 
+
+.navBar ul {
+
+    list-style: none;
+    display: flex;
+
+
+}
+
+.navBar ul li{
+
+
+    padding: 10px;
+}
+
+
+.navBar ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.logoNav img {
+    width: 56px;
+    margin: 12px;
+    
+}  
+
+.iconosNav img{
+    width: 30px;
+    margin: 12px;
+
+
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+border: 1px  solid black ;  
+margin: 10px;
+padding: 6px;
+background-color: #056CF2;
+border-radius: 5px;
+
+}
+.tarjetaImg {
+    margin: 5px;
+    
+    
+}
+
+.tarjetaDescrip{
+    margin:10px ;
+    
+}
+.btn{
+    margin-bottom: 6px;
+    background-color: #6EE39C;
+    border-radius:3px;
+    border: 0px;
+    padding: 8px 12px;
+}
+
+.tarjetaTitulo{
+font-size: 18px;
+}
+
+.contenedorTarjeta{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+
+}
+footer{
+    width: 100%;
+    
+    background-color: #000;
+    border:0 ;
+    border-radius: 2px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.headerImagen{ 
+
+    
+    background-image: url(../imagenes/bienvenida-PhotoRoom.png);
+    width: 1100px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    margin: 3px;
+    
+    
+    
+}
+.buscarPorMarca h2 {
+
+    text-align: center;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+
+.buscarPorMarca .imgUno  {
+    margin: 6px;
+    padding-right:4px;
+    padding-left: 4px;
+}
+
+.buscarPorMarca .imgDos  {
+    margin: 6px;
+    padding-right:4px;
+    padding-left: 4px;
+}
+
+
+.redes img{
+
+    width: 40px;
+    
+    margin: 10px;
+}
+
+.juegosDeAccionTitulo{
+
+    text-align: center;
+    margin: 10px;
+
+}
+
+.proximente{
+
+    text-align : center ;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contornoFomulario{
+
+    color: black;
+    
+    margin: 6px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    
+
+}
+
+.fomulario input{
+    margin: 6px;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #056CF2;
+    
+
+}
+
+::placeholder{
+    color: #000;
+}
+
+.fomulario textarea{
+    
+    
+    margin: 6px;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #056CF2;
+    width: 900px;
+    
+
+
+}
+.fomulario select{
+
+    margin: 6px;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #056CF2;
+
+}
+
+
+
+
+.reseñaTitulo{
+
+    text-align: center;
+
+}
+
+.tituloRecompensas{
+    
+    text-align: center;
+}
+
+
+main{
+
+    display: flex;
+    flex-direction: column;
+}
+.videoReseña{
+display: flex;
+justify-content: center;
+    
+}
+
+.videoReseña .video{
+    
+    margin:10px;
+    border-radius: 6px;
+border: #000 solid 4px;
+padding: 2px;
+
+    }
+
+.fomulario{
+display: flex;
+
+flex-direction: column;
+
+}
+
+.camposPrincipales{
+    
+    display: flex;
+    justify-content:space-around;
+}
+
+.botonesForm{
+    display: flex;
+    justify-content: center;
+}
+.campoConsulta{
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+.padre{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px auto auto auto ;
+    grid-template-areas: "navegador navegador navegador"
+                        "encabezado encabezado encabezado"
+                        " principal principal principal"
+                        "pie pie pie  ";
+
+
+
+}  
+
+.navegador{
+    grid-area: navegador;
+}
+
+.encabezado{
+    
+    grid-area: encabezado;
+    
+
+
+}
+
+.Principal{
+    grid-area: principal;
+
+}
+
+.pie{
+    grid-area: pie ;
+}
+
+
+@media(max-width:576){
+    
+}
