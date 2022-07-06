@@ -77,7 +77,7 @@
 .tarjeta{
     display: flex;
     flex-direction: column;
-    /* width: 250px; */
+    width: 250px;
     align-items: center;
 border: 1px  solid black ;  
 margin: 10px;
@@ -172,63 +172,18 @@ footer{
 
 
 
-.fomulario input{
-    margin: 6px;
-    padding: 6px;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: #056CF2;
-    
-
-}
-
-::placeholder{
-    color: #000;
-}
-
-.fomulario textarea{
-    
-    
-    margin: 6px;
-    padding: 6px;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: #056CF2;
-    width: 900px;
     
 
 
-}
-.fomulario select{
-
-    margin: 6px;
-    padding: 6px;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: #056CF2;
-
-}
 
 
 
 
-.reseñaTitulo{
-
-    text-align: center;
-
-}
-
-.tituloRecompensas{
-    
-    text-align: center;
-}
 
 
-main{
 
-    display: flex;
-    flex-direction: column;
-}
+
+
 .videoReseña{
 display: flex;
 justify-content: center;
@@ -239,32 +194,13 @@ justify-content: center;
     
     margin:10px;
     border-radius: 6px;
-border: #000 solid 4px;
-padding: 2px;
-
-    }
-
-.fomulario{
-display: flex;
-
-flex-direction: column;
-
+    border: #000 solid 4px;
+    padding: 2px;
 }
 
-.camposPrincipales{
-    
-    display: flex;
-    justify-content:space-around;
-}
+form{
+    background-color: #056CF2;
+    border-radius: 4px;
 
-.botonesForm{
-    display: flex;
-    justify-content: center;
 }
-.campoConsulta{
-    
-    display: flex;
-    justify-content: center;
-}
-
 
