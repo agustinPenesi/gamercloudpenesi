@@ -1,213 +1,111 @@
-@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "bebas neue";
-    box-sizing: border-box;
-    
-    
-    
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "bebas neue";
+  box-sizing: border-box;
 }
+
 .tituloPricipal {
-    font-size: 40px;
-
-}
-    
-    
-    
-    
-    
-    
-
-
-
-.copyright h5{
-
-    font-size: 18px;
-    
-    color:#056CF2 ;
-    
-
-    
+  font-size: 40px;
 }
 
-.colorFondo{
-    background-color: #6EE39C;
-
+.navegador {
+  background-color: #056CF2;
+}
+.navegador .logoNav img {
+  width: 56px;
+  margin: 12px;
+}
+.navegador ul {
+  list-style: none;
+}
+.navegador ul li a {
+  text-decoration: none;
+  color: #000;
 }
 
-.colorNav{
-
-    
-    
-    background-color: #056CF2; 
-    
-} 
-
-.navBar ul {
-
-    list-style: none;
-    
-
-
+.copyright h5 {
+  font-size: 18px;
+  color: #056CF2;
 }
 
-
-
-    
-
-
-.navBar ul li a{
-    text-decoration: none;
-    color: #000;
+.colorFondo {
+  background-color: #6EE39C;
 }
 
-.logoNav img {
-    width: 56px;
-    margin: 12px;
-    
-}  
-
-.iconosNav img{
-    width: 30px;
-    margin: 12px;
-
-
-}
-.tarjeta{
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    align-items: center;
-border: 1px  solid black ;  
-margin: 10px;
-padding: 6px;
-background-color: #056CF2;
-border-radius: 5px;
-
-}
-.tarjetaImg {
-    margin: 5px;
-    
-    
+.iconosNav img {
+  width: 30px;
+  margin: 12px;
 }
 
-.tarjetaDescrip{
-    margin:10px ;
-    
+.contenedorTarjeta .tarjeta {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: center;
+  border: 1px solid #000;
+  margin: 10px;
+  padding: 6px;
+  background-color: #056CF2;
+  border-radius: 5px;
 }
-.btn{
-    margin-bottom: 6px;
-    background-color: #6EE39C;
-    border-radius:3px;
-    border: 0px;
-    padding: 8px 12px;
+.contenedorTarjeta .tarjeta .tarjetaImg {
+  margin: 5px;
 }
-
-.tarjetaTitulo{
-font-size: 18px;
+.contenedorTarjeta .tarjeta .tarjetaDescrip {
+  margin: 10px;
 }
-
-.contenedorTarjeta{
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around ;
-
+.contenedorTarjeta .tarjeta .btn {
+  margin-bottom: 6px;
+  background-color: #6EE39C;
+  border-radius: 3px;
+  border: 0px;
+  padding: 8px 12px;
 }
-footer{
-    width: 100%;
-    
-    background-color: #000;
-    border:0 ;
-    border-radius: 2px;
+.contenedorTarjeta .tarjeta .tarjetaTitulo {
+  font-size: 18px;
 }
 
+footer {
+  width: 100%;
+  background-color: #000;
+  border: 0;
+  border-radius: 2px;
+}
 
-    
-
-
-
-
-    
-    
-    
-    
-
-    
-
-
+.buscarPorMarca .img {
+  width: 100%;
+}
 .buscarPorMarca h2 {
-
-    font-size: 24px;
+  font-size: 24px;
 }
 
-.img{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.redes img {
+  width: 40px;
+  margin: 10px;
 }
 
-
-
-
-
-
-.redes img{
-
-    width: 40px;
-    
-    margin: 10px;
+.proximente {
+  font-size: 24px;
 }
 
-
-
-
-.proximente{
-
-    
-    font-size: 24px;
-    
+.videoReseña {
+  display: flex;
+  justify-content: center;
+}
+.videoReseña .video {
+  margin: 10px;
+  border-radius: 6px;
+  border: #000 solid 4px;
+  padding: 2px;
 }
 
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-.videoReseña{
-display: flex;
-justify-content: center;
-    
+form {
+  background-color: #056CF2;
+  border-radius: 4px;
 }
-
-.videoReseña .video{
-    
-    margin:10px;
-    border-radius: 6px;
-    border: #000 solid 4px;
-    padding: 2px;
+form .botonesForm {
+  background-color: #6EE39C;
 }
-
-form{
-    background-color: #056CF2;
-    border-radius: 4px;
-
-}
-
-.botonesForm{
-
-    
-    
-    background-color: #6EE39C;
-}
-    
