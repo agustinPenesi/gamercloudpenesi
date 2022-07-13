@@ -7,12 +7,20 @@
   box-sizing: border-box;
 }
 
+.colorFondo {
+  background-color: #6EE39C;
+}
+
 .tituloPricipal {
   font-size: 40px;
 }
 
 .navegador {
   background-color: #056CF2;
+}
+.navegador .iconosNav img {
+  width: 30px;
+  margin: 12px;
 }
 .navegador .logoNav img {
   width: 56px;
@@ -24,20 +32,6 @@
 .navegador ul li a {
   text-decoration: none;
   color: #000;
-}
-
-.copyright h5 {
-  font-size: 18px;
-  color: #056CF2;
-}
-
-.colorFondo {
-  background-color: #6EE39C;
-}
-
-.iconosNav img {
-  width: 30px;
-  margin: 12px;
 }
 
 .contenedorTarjeta .tarjeta {
@@ -68,27 +62,16 @@
   font-size: 18px;
 }
 
-footer {
-  width: 100%;
-  background-color: #000;
-  border: 0;
-  border-radius: 2px;
-}
-
-.buscarPorMarca .img {
-  width: 100%;
-}
-.buscarPorMarca h2 {
-  font-size: 24px;
-}
-
-.redes img {
-  width: 40px;
-  margin: 10px;
-}
-
 .proximente {
   font-size: 24px;
+}
+
+form {
+  background-color: #056CF2;
+  border-radius: 4px;
+}
+form .botonesForm {
+  background-color: #6EE39C;
 }
 
 .videoReseña {
@@ -102,10 +85,17 @@ footer {
   padding: 2px;
 }
 
-form {
-  background-color: #056CF2;
-  border-radius: 4px;
+footer {
+  width: 100%;
+  background-color: #000;
+  border: 0;
+  border-radius: 2px;
 }
-form .botonesForm {
-  background-color: #6EE39C;
+footer .redes img {
+  width: 40px;
+  margin: 10px;
+}
+footer .copyright h5 {
+  font-size: 18px;
+  color: #056CF2;
 }

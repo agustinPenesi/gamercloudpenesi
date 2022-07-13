@@ -1,0 +1,42 @@
+.contenedorTarjeta{
+    .tarjeta{
+        .tarjetaImg {
+            margin: 5px;
+            
+            
+        }
+        
+        .tarjetaDescrip{
+            margin:10px ;
+            
+        }
+        .btn{
+            margin-bottom: 6px;
+            background-color: $colorSecundario;
+            border-radius:3px;
+            border: 0px;
+            padding: 8px 12px;
+        }
+        
+        .tarjetaTitulo{
+        font-size: 18px;
+        }
+        
+        
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        align-items: center;
+        border: 1px  solid $colorTerciario ;  
+        margin: 10px;
+        padding: 6px;
+        background-color: $colorPricipal;
+        border-radius: 5px;
+    
+    }
+    
+
+}
+
+
+

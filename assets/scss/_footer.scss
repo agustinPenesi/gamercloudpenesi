@@ -1,0 +1,25 @@
+
+footer{
+    width: 100%;
+    
+    background-color: $colorTerciario;
+    border:0 ;
+    border-radius: 2px;
+    .redes {
+        img{
+    
+            width: 40px;
+            
+            margin: 10px;
+        }
+    }
+    
+    .copyright {
+        h5{
+            font-size: 18px;
+            color: $colorPricipal;
+    
+        }
+    }
+    
+}
