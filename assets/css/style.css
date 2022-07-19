@@ -7,23 +7,15 @@
   box-sizing: border-box;
 }
 
-.colorFondo {
-  background-color: #6EE39C;
-}
-
-.tituloPricipal {
-  font-size: 40px;
-}
-
 .navegador {
-  background-color: #056CF2;
+  background-color: #FF337A;
 }
 .navegador .iconosNav img {
   width: 30px;
   margin: 12px;
 }
 .navegador .logoNav img {
-  width: 56px;
+  width: 90px;
   margin: 12px;
 }
 .navegador ul {
@@ -34,7 +26,20 @@
   color: #000;
 }
 
-.contenedorTarjeta .tarjeta {
+@media (max-width: 992px) {
+  .iconosNav {
+    display: none;
+  }
+}
+.colorFondo {
+  background-color: #6EE39C;
+}
+
+.tituloPricipal {
+  font-size: 40px;
+}
+
+.contenedorTarjeta .tarjeta, .contenedorTarjeta .tarjetaMother {
   display: flex;
   flex-direction: column;
   width: 250px;
@@ -42,23 +47,35 @@
   border: 1px solid #000;
   margin: 10px;
   padding: 6px;
-  background-color: #056CF2;
+  background-color: #FF337A;
   border-radius: 5px;
 }
-.contenedorTarjeta .tarjeta .tarjetaImg {
+.contenedorTarjeta .tarjeta .tarjetaImg, .contenedorTarjeta .tarjeta .motherImg, .contenedorTarjeta .tarjetaMother .tarjetaImg, .contenedorTarjeta .tarjetaMother .motherImg {
   margin: 5px;
 }
-.contenedorTarjeta .tarjeta .tarjetaDescrip {
+.contenedorTarjeta .tarjeta .tarjetaDescrip, .contenedorTarjeta .tarjeta .tarjetaInfo, .contenedorTarjeta .tarjetaMother .tarjetaDescrip, .contenedorTarjeta .tarjetaMother .tarjetaInfo {
   margin: 10px;
 }
-.contenedorTarjeta .tarjeta .btn {
+.contenedorTarjeta .tarjeta .btn, .contenedorTarjeta .tarjetaMother .btn {
   margin-bottom: 6px;
   background-color: #6EE39C;
   border-radius: 3px;
   border: 0px;
   padding: 8px 12px;
 }
-.contenedorTarjeta .tarjeta .tarjetaTitulo {
+.contenedorTarjeta .tarjeta .tarjetaTitulo, .contenedorTarjeta .tarjetaMother .tarjetaTitulo {
+  font-size: 18px;
+}
+
+.botonMother {
+  background-color: #6EE39C;
+  border: 0px;
+  border-radius: 3px;
+  margin-bottom: 6px;
+  padding: 8px 12px;
+}
+
+.TarjetaEncabezado {
   font-size: 18px;
 }
 
@@ -67,10 +84,12 @@
 }
 
 form {
-  background-color: #056CF2;
-  border-radius: 4px;
+  background-color: #FF337A;
+  border-radius: 10px;
 }
 form .botonesForm {
+  border: 0px;
+  border-radius: 5px;
   background-color: #6EE39C;
 }
 
@@ -85,17 +104,17 @@ form .botonesForm {
   padding: 2px;
 }
 
-footer {
+.copyright {
   width: 100%;
   background-color: #000;
   border: 0;
   border-radius: 2px;
 }
-footer .redes img {
+.copyright .redes img {
   width: 40px;
   margin: 10px;
 }
-footer .copyright h5 {
+.copyright .textoFooter {
   font-size: 18px;
-  color: #056CF2;
+  color: #FF337A;
 }

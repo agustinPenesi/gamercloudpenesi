@@ -1,4 +1,6 @@
 .navegador{
+    background-color: $colorPricipal;
+    
     .iconosNav {
         img{
             width: 30px;
@@ -13,13 +15,12 @@
 
     
     
-    background-color: $colorPricipal;
     
     
     
     .logoNav{
         img {
-            width: 56px;
+            width: 90px;
             margin: 12px;
             
         }
@@ -41,6 +42,16 @@
     
     
     }
+}
+
+
+
+
+@media(max-width:992px){
+    .iconosNav{
+            display: none;
+        }
 
     }
-
+        
+    
