@@ -6,28 +6,7 @@
 
 
 .contenedorTarjeta{
-    .tarjetaMother{
-    .TarjetaEncabezado{
-        @include tarjetaMotherT;
     
-    }
-    
-    .botonMother{
-        background-color: map-get($map: $estilosbtn, $key:colorBoton );
-        border: map-get($map: $estilosbtn , $key:bordes );
-        border-radius: map-get($map:$estilosbtn , $key:redondeado );
-        margin-bottom: map-get($map: $estilosbtn, $key:margenes );
-        
-        padding: map-get($map: $estilosbtn, $key:padin );
-    }
-    .tarjetaInfo{
-        @extend .tarjetaDescrip;
-    }
-    
-    .motherImg{
-        @extend .tarjetaImg;
-    }
-    @extend .tarjeta;
 
     .tarjeta{
         
@@ -67,11 +46,48 @@
         border-radius: 5px;
     
     }
+    .tarjetaMother{
+        @extend .tarjeta;
+        .TarjetaEncabezado{
+            @include tarjetaMotherT;
+        
+        }
+        .botonMother{
+            background-color: map-get($map: $estilosbtn, $key:colorBoton );
+            border: map-get($map: $estilosbtn , $key:bordes );
+            border-radius: map-get($map:$estilosbtn , $key:redondeado );
+            margin-bottom: map-get($map: $estilosbtn, $key:margenes );
+            
+            padding: map-get($map: $estilosbtn, $key:padin );
+        }
+        
+        .tarjetaInfo{
+            @extend .tarjetaDescrip;
+        }
+        
+        .motherImg{
+            @extend .tarjetaImg;
+        }
+    }
+        
+        
+        
+        
+        
+        
+        
+    
 }
 
 
 
-}
+
+
+
+
+
+
+
 
 
 

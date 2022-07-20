@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +33,7 @@
 }
 
 @media (max-width: 992px) {
-  .iconosNav {
+  .iconosNav img {
     display: none;
   }
 }
@@ -50,10 +56,10 @@
   background-color: #FF337A;
   border-radius: 5px;
 }
-.contenedorTarjeta .tarjeta .tarjetaImg, .contenedorTarjeta .tarjeta .motherImg, .contenedorTarjeta .tarjetaMother .tarjetaImg, .contenedorTarjeta .tarjetaMother .motherImg {
+.contenedorTarjeta .tarjeta .tarjetaImg, .contenedorTarjeta .tarjetaMother .tarjetaImg, .contenedorTarjeta .tarjetaMother .motherImg {
   margin: 5px;
 }
-.contenedorTarjeta .tarjeta .tarjetaDescrip, .contenedorTarjeta .tarjeta .tarjetaInfo, .contenedorTarjeta .tarjetaMother .tarjetaDescrip, .contenedorTarjeta .tarjetaMother .tarjetaInfo {
+.contenedorTarjeta .tarjeta .tarjetaDescrip, .contenedorTarjeta .tarjetaMother .tarjetaDescrip, .contenedorTarjeta .tarjetaMother .tarjetaInfo {
   margin: 10px;
 }
 .contenedorTarjeta .tarjeta .btn, .contenedorTarjeta .tarjetaMother .btn {
@@ -66,19 +72,16 @@
 .contenedorTarjeta .tarjeta .tarjetaTitulo, .contenedorTarjeta .tarjetaMother .tarjetaTitulo {
   font-size: 18px;
 }
-
-.botonMother {
+.contenedorTarjeta .tarjetaMother .TarjetaEncabezado {
+  font-size: 18px;
+}
+.contenedorTarjeta .tarjetaMother .botonMother {
   background-color: #6EE39C;
   border: 0px;
   border-radius: 3px;
   margin-bottom: 6px;
   padding: 8px 12px;
 }
-
-.TarjetaEncabezado {
-  font-size: 18px;
-}
-
 .proximente {
   font-size: 24px;
 }
@@ -109,6 +112,7 @@ form .botonesForm {
   background-color: #000;
   border: 0;
   border-radius: 2px;
+  margin-top: auto;
 }
 .copyright .redes img {
   width: 40px;

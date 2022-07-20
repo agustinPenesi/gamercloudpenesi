@@ -64,25 +64,25 @@
         </div>
       
         
-        <form  action=  "" class=" d-flex  justify-content-center flex-wrap mx-1 " >
+        <form method="get" action=   "" class=" d-flex  justify-content-center flex-wrap mx-1  needs-validation" novalidate  >
           <div class="mb-3 mx-3 col-3">
-            <label for="nombre" class="form-label">  nombre</label>
+            <label for="nombre" class="form-label">  nombre</label > 
             <input type="text" class="form-control" id="nombre" placeholder="coloque su nombre">
           </div>
           <div class="mb-3 mx-3 col-3">
-            <label for="apellido" class="form-label"> apellido</label>
-            <input type="text" class="form-control" id="apellido" placeholder="coloque su apellido">
+            <label for="apellido" class="form-label "> apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="coloque su apellido" required>
           </div>
           <div class="mb-3 mx-3 col-3">
             <label for="email" class="form-label"> email </label>
-            <input type="email" class="form-control" id="email" placeholder="gc@gmail.com">
+            <input type="email" class="form-control" id="email" placeholder="gc@gmail.com" required>
           </div>
           <div class="mb-3 col-9 ">
             <label for="textarea" class="form-label">consulta</label>
-            <textarea class="form-control" id="textarea" rows="3"></textarea>
+            <textarea class="form-control" id="textarea" rows="3"></textarea required>
           </div>
           <div class="form-check  col-4 justify-content-center d-flex  ">
-            <input class="form-check-input " type="checkbox" value="" id="codicion">
+            <input class="form-check-input " type="checkbox" value="" id="codicion"required>
             <label  for="codicion" class="form-label mx-1 align-items-center">acepto los terminos </label>
 
           </div>  

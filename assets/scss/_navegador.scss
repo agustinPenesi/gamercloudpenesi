@@ -2,7 +2,9 @@
     background-color: $colorPricipal;
     
     .iconosNav {
+        
         img{
+            
             width: 30px;
             margin: 12px;
     
@@ -48,10 +50,10 @@
 
 
 @media(max-width:992px){
-    .iconosNav{
-            display: none;
-        }
-
+    .iconosNav img{
+        display: none;
     }
-        
+    
+}
+   
     
