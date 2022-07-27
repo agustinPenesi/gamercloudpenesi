@@ -23,13 +23,19 @@ body {
 .navegador .logoNav img {
   width: 90px;
   margin: 12px;
+  padding: 8px;
 }
-.navegador ul {
+.navegador .ul {
   list-style: none;
 }
-.navegador ul li a {
+.navegador .ul .li a {
   text-decoration: none;
   color: #000;
+  font-size: 17px;
+}
+.navegador .ul .li a:hover {
+  text-decoration: underline;
+  color: #6EE39C;
 }
 
 @media (max-width: 992px) {
@@ -43,8 +49,13 @@ body {
 
 .tituloPricipal {
   font-size: 40px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
+.contenedorTarjeta .motherboardsTitulo {
+  font-size: 27px;
+}
 .contenedorTarjeta .tarjeta, .contenedorTarjeta .tarjetaMother {
   display: flex;
   flex-direction: column;
@@ -55,25 +66,29 @@ body {
   padding: 6px;
   background-color: #FF337A;
   border-radius: 5px;
+  justify-content: space-between;
 }
 .contenedorTarjeta .tarjeta .tarjetaImg, .contenedorTarjeta .tarjetaMother .tarjetaImg, .contenedorTarjeta .tarjetaMother .motherImg {
   margin: 5px;
 }
 .contenedorTarjeta .tarjeta .tarjetaDescrip, .contenedorTarjeta .tarjetaMother .tarjetaDescrip, .contenedorTarjeta .tarjetaMother .tarjetaInfo {
   margin: 10px;
+  font-size: 22px;
 }
 .contenedorTarjeta .tarjeta .btn, .contenedorTarjeta .tarjetaMother .btn {
   margin-bottom: 6px;
+  margin-top: 6px;
   background-color: #6EE39C;
   border-radius: 3px;
   border: 0px;
   padding: 8px 12px;
+  font-size: 18px;
 }
 .contenedorTarjeta .tarjeta .tarjetaTitulo, .contenedorTarjeta .tarjetaMother .tarjetaTitulo {
-  font-size: 18px;
+  font-size: 23px;
 }
 .contenedorTarjeta .tarjetaMother .TarjetaEncabezado {
-  font-size: 18px;
+  font-size: 23px;
 }
 .contenedorTarjeta .tarjetaMother .botonMother {
   background-color: #6EE39C;
@@ -83,16 +98,21 @@ body {
   padding: 8px 12px;
 }
 .proximente {
-  font-size: 24px;
+  font-size: 27px;
 }
 
 form {
   background-color: #FF337A;
   border-radius: 10px;
 }
+form .form-label {
+  margin-top: 8px;
+  font-size: 19px;
+}
 form .botonesForm {
   border: 0px;
   border-radius: 5px;
+  font-size: 18px;
   background-color: #6EE39C;
 }
 
@@ -114,11 +134,56 @@ form .botonesForm {
   border-radius: 2px;
   margin-top: auto;
 }
+.copyright a {
+  color: #FF337A;
+  text-decoration: none;
+  font-size: 18px;
+}
 .copyright .redes img {
   width: 40px;
   margin: 10px;
 }
 .copyright .textoFooter {
-  font-size: 18px;
+  font-size: 20px;
   color: #FF337A;
+}
+
+.subTitulos {
+  font-size: 27px;
+}
+
+.eventosContainerImg .galeriaEventos {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+@media (max-width: 1349px) {
+  .galeriaEventos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .galeriaEventos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .galeriaEventos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.consulTitulo {
+  font-size: 20px;
+}
+
+.reconpensaTitulo {
+  font-size: 23px;
+}
+
+.textoAcuerdo p {
+  font-size: 25px;
 }

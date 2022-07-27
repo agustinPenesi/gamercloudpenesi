@@ -1,0 +1,43 @@
+.eventosContainerImg{
+    
+    .galeriaEventos{
+        
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        
+        
+    }
+    
+}
+
+
+@media(max-width:1349px){
+    .galeriaEventos{
+            grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+
+
+@media(max-width:992px){
+    .galeriaEventos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:768px){
+    .galeriaEventos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+    
+
+    
+    
+    

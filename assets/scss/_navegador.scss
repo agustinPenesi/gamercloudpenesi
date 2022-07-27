@@ -24,15 +24,24 @@
         img {
             width: 90px;
             margin: 12px;
+            padding: 8px;
             
         }
 
     }
-    ul {
-        li{
+    .ul {
+        .li{
             a{
+                &:hover{
+                    text-decoration: underline;
+                    color: $colorSecundario;
+                }
                 text-decoration: none;
-                color:$colorTerciario
+                color: $colorTerciario;
+                font-size: 17px;
+                
+                
+
             }
 
         
@@ -52,8 +61,10 @@
 @media(max-width:992px){
     .iconosNav img{
         display: none;
+        
     }
     
 }
-   
-    
+
+
+

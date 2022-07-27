@@ -1,14 +1,18 @@
 @mixin tarjetaMotherT {
-    font-size: 18px;
+    font-size: 23px;
     
 }
 
 
 
 .contenedorTarjeta{
+    .motherboardsTitulo{
+        font-size: 27px;
+    }
     
 
     .tarjeta{
+        
         
         
     
@@ -20,18 +24,22 @@
         
         .tarjetaDescrip{
             margin:10px ;
+            font-size: 22px;
             
         }
         .btn{
             margin-bottom: 6px;
+            margin-top: 6px;
             background-color: $colorSecundario;
             border-radius:3px;
             border: 0px;
             padding: 8px 12px;
+            font-size: 18px;
+            
         }
         
         .tarjetaTitulo{
-            font-size: 18px;
+            font-size: 23px;
         }
         
         
@@ -44,10 +52,11 @@
         padding: 6px;
         background-color: $colorPricipal;
         border-radius: 5px;
-    
+    justify-content: space-between;
     }
     .tarjetaMother{
         @extend .tarjeta;
+        
         .TarjetaEncabezado{
             @include tarjetaMotherT;
         
