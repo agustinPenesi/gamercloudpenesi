@@ -4,7 +4,6 @@
 @import"navegador";
 @import"colorFondo";
 @import"tituloPricipal";
-
 @import"tarjetas";
 @import"proximamente";
 @import"form";
@@ -14,10 +13,14 @@
 @import "eventoGaleria";
 @import"consulTitulo";
 @import"reconpensaTitulo";
-@import"parrafo"
+@import"parrafo";
 
 
 
+.carouselImg{
+    width: 85%;
+    margin: auto;
+}
 
 
 

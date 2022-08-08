@@ -1,16 +1,37 @@
-.eventosContainerImg{
-    
-    .galeriaEventos{
-        
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-        column-gap: 10px;
-        row-gap: 10px;
-        
-        
+
+
+.galeriaEventos{
+    .imagen{ &:hover{.efectoSolapa{ height:100%; cursor: pointer;}}
+        position: relative;
+        .efectoSolapa{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            background-color:$colorTerciario;
+            width: 100%;
+            height: 0%;
+            opacity: 70%;
+            overflow: hidden;
+            transition: ease .5;
+            .textoSolapa{
+                font-size: 25px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+                font-weight: 400;
+                color:white;
+            }
+        }
     }
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    
     
 }
 

@@ -68,6 +68,9 @@ body {
   border-radius: 5px;
   justify-content: space-between;
 }
+.contenedorTarjeta .tarjeta:hover, .contenedorTarjeta .tarjetaMother:hover {
+  box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.9);
+}
 .contenedorTarjeta .tarjeta .tarjetaImg, .contenedorTarjeta .tarjetaMother .tarjetaImg, .contenedorTarjeta .tarjetaMother .motherImg {
   margin: 5px;
 }
@@ -152,13 +155,41 @@ form .botonesForm {
   font-size: 27px;
 }
 
-.eventosContainerImg .galeriaEventos {
+.galeriaEventos {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   column-gap: 10px;
   row-gap: 10px;
+}
+.galeriaEventos .imagen {
+  position: relative;
+}
+.galeriaEventos .imagen:hover .efectoSolapa {
+  height: 100%;
+  cursor: pointer;
+}
+.galeriaEventos .imagen .efectoSolapa {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #000;
+  width: 100%;
+  height: 0%;
+  opacity: 70%;
+  overflow: hidden;
+  transition: ease 0.5;
+}
+.galeriaEventos .imagen .efectoSolapa .textoSolapa {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  color: white;
 }
 
 @media (max-width: 1349px) {
@@ -186,4 +217,9 @@ form .botonesForm {
 
 .textoAcuerdo p {
   font-size: 25px;
+}
+
+.carouselImg {
+  width: 85%;
+  margin: auto;
 }
